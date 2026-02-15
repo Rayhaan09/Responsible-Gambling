@@ -135,3 +135,32 @@ footer {
 .container .section {
     flex: 1 1 300px; /* minimum 300px, sinon rétrécit */
 }
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-family: inherit;
+}
+
+form button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: white;
+    color: #8b0000;
+    border: 1px solid #8b0000;
+}
+form textarea {
+    width: 100%;
+    min-height: 150px;   /* starting height */
+    resize: vertical;    /* user can make it taller */
+}
