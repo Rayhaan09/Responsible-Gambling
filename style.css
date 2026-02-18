@@ -32,6 +32,7 @@ body {
     display: block;
     color: white;
     text-decoration: none;
+    text-align: center;
     padding: 15px;
     margin: 10px 20px;
     border-radius: 8px;
@@ -64,24 +65,34 @@ body {
 h1 {
     color: #8b0000;
 }
-
+h2 {
+    text-align: center;
+}
 .section {
     background-color: white;
     padding: 20px;
+    text-align: justify;
+    font-size: 20px;
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 100%;
 }
+strong {
+    display: block;
+    text-align: center;
+}
 
 /* Images décoratives */
 .decor {
-    width: 100px;
+    width: 170px;
     max-width: 100%;
     height: auto;
-    margin: 10px;
+    display: block;      
+    margin: 10px auto;  
     border-radius: 10px;
 }
+
 
 /* Footer */
 footer {
@@ -90,6 +101,12 @@ footer {
     color: gray;
 }
 
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px; /* spacing between fields */
+    font-weight: bold;   /* optional, makes labels stand out */
+}
 /* ===== Responsive Design ===== */
 
 /* Tablettes */
@@ -163,4 +180,48 @@ form textarea {
     width: 100%;
     min-height: 150px;   /* starting height */
     resize: vertical;    /* user can make it taller */
+}
+
+.poster-img {
+  display: block;                /* makes margin auto work for centering */
+  margin: 20px auto;             /* centers horizontally + space above/below */
+  max-width: 30%;                /* image will shrink on smaller screens */
+  width: 400px;                  /* fixed width of 200px (added missing semicolon) */
+  height: auto;                  /* keeps aspect ratio */
+  border: 3px solid #000;        /* black border around each image */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* optional: nice shadow */
+  border-radius: 10px;           /* optional: rounded corners */
+}
+.image-row {
+    display: flex;             /* Put images in a row */
+    justify-content: center;   /* Center them horizontally */
+    gap: 20px;                 /* Space between images */
+    margin-top: 20px;          /* Optional spacing from text above */
+}
+
+.risk-img {
+    width: 300px;              /* Adjust size as needed */
+    height: auto;
+    border-radius: 15px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /* Optional nice shadow */
+    object-fit: cover;         /* Keeps image proportions */
+}
+.stat-img {
+  display: block;                /* makes margin auto work for centering */
+  margin: 20px auto;             /* centers horizontally + space above/below */
+  max-width: 100%;                /* image will shrink on smaller screens */
+  width: 500px;                  /* fixed width of 200px (added missing semicolon) */
+  height: auto;                  /* keeps aspect ratio */
+  border-radius: 10px;           /* optional: rounded corners */
+}
+/* Instagram image - larger size */
+.instagram-img {
+    width: 600px;                  /* Much larger size */
+    height: auto;
+    max-width: 90%;                /* Responsive on mobile */
+    height: auto;                  /* Keeps aspect ratio */
+    display: block;                /* Centers the image */
+    margin: 20px auto;             /* Centers horizontally with more space */
+    border-radius: 15px;           /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Optional: nicer shadow for larger image */
 }
